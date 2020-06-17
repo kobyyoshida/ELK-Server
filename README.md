@@ -4,7 +4,7 @@ ELK Server with 4 VMs
 Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
 TODO: Enter the playbook file.
 
@@ -141,7 +141,7 @@ Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 SSH into the control node and follow the steps below:
 
-Copy the _____ file to _____.
+Copy the filebeat.yml file to metricbeat.yml.
 Update the _____ file to include...
 Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
