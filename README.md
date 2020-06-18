@@ -31,18 +31,19 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-
+| Name      | Function     | IP Address | Operating System |
+|-----------|--------------|------------|------------------|
+| JumpBox   | Gateway      | 10.0.0.4   | Linux            |
+| DVWA-VM1  | Docker-DVWA  | 10.0.0.5   |                  |
+| DVWA-VM2  | Docker-DVWA  | 10.0.0.6   |                  |
+| DVWA-VM3  | Docker-DVWA  | 10.0.0.7   |                  |
+| DVWA-VM4  | Docker-DVMA  | 10.0.0.10  |                  |
+| ELK Server| ELK          | 10.0.0.9   |                  |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
 Machines within the network can only be accessed by _____.
