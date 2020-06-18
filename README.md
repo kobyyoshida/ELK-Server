@@ -13,7 +13,7 @@ This document contains the following details:
 Description of the Topologu
 Access Policies
 ELK Configuration
-[a relative link](filebeat-playbook.yml)
+[filebeat-playbook.yml](filebeat-playbook.yml)
 Beats in Use
 Machines Being Monitored
 
