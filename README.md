@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - Ansible-Playbooks [elk.yml](elk.yml) and [filebeat-playbook.yml](filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -22,7 +22,8 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+- Load Balancers protect 
+_TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
@@ -33,12 +34,12 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name      | Function     | IP Address | Operating System |
 |-----------|--------------|------------|------------------|
-| JumpBox   | Gateway      | 10.0.0.4   | Linux            |
-| DVWA-VM1  | Docker-DVWA  | 10.0.0.5   |                  |
-| DVWA-VM2  | Docker-DVWA  | 10.0.0.6   |                  |
-| DVWA-VM3  | Docker-DVWA  | 10.0.0.7   |                  |
-| DVWA-VM4  | Docker-DVMA  | 10.0.0.10  |                  |
-| ELK Server| ELK          | 10.0.0.9   |                  |
+| JumpBox   | Gateway      | 10.0.0.4   | Ubuntu 18.04     |
+| DVWA-VM1  | Docker-DVWA  | 10.0.0.5   | Ubuntu 18.04     |
+| DVWA-VM2  | Docker-DVWA  | 10.0.0.6   | Ubuntu 18.04     |
+| DVWA-VM3  | Docker-DVWA  | 10.0.0.7   | Ubuntu 18.04     |
+| DVWA-VM4  | Docker-DVMA  | 10.0.0.10  | Ubuntu 18.04     |
+| ELK Server| ELK          | 10.0.0.9   | Ubuntu 18.04     |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -53,10 +54,12 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
+| Jump Box | No                  | Local IP Address     |
+| DVWA-VM1 | No                  | 10.0.0.5             |
+| DVWA-VM2 | No                  | 10.0.0.6             |
+| DVWA-VM3 | No                  | 10.0.0.7             |
+| DVWA-VM4 | No                  | 10.0.0.10            |
+|ELK Server| No                  | 10.0.0.9 and Local IP Address|
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
