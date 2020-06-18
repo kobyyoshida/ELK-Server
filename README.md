@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - Ansible-Playbooks: [elk.yml](elk.yml) and [filebeat-playbook.yml](filebeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -90,11 +90,10 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the [filebeat.yml](filebeat.yml) and [metricbeat.yml](metricbeat.yml) files to /etc/ansible/roles/files/ directory.
-- Update the _____ file to include...
+- Update the [filebeat.yml](filebeat.yml),[metricbeat.yml](metricbeat.yml) and  to include the IP address of the ELK Server
+- Update the ansible.cfg file to change the remote_user value to the username for playbooks.
 - Run the playbook, and navigate to ELK Server to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
+- To ensure the ELK Server is running, navigate to the URL that is the public IP Address of the ELK Server
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
