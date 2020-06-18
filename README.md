@@ -10,11 +10,16 @@ TODO: Enter the playbook file.
 
 This document contains the following details:
 
-Description of the Topologu
+Description of the Topology
+
 Access Policies
+
 ELK Configuration
+
 [filebeat-playbook.yml](filebeat-playbook.yml)
+
 Beats in Use
+
 Machines Being Monitored
 
 
