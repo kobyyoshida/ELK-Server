@@ -43,9 +43,10 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
+- The Jumpbox (10.0.0.4) is the only machine that can be connected to from the internet through http.
 
 Machines within the network can only be accessed by SSH.
-- The only machine able to connect to the Elk Server is JumpBox (10.0.0.4)
+- Jumpbox (10.0.0.4) is the only machine able to connect to the Elk Server (10.0.0.9) 
 
 A summary of the access policies in place can be found in the table below.
 
@@ -61,6 +62,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - _TODO: What is the main advantage of automating configuration with Ansible?_
+- The main advantage of using Ansible is to automate the deployment of each of the DVWA-VMs into one command. 
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
