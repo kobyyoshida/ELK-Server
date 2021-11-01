@@ -42,7 +42,6 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _Add whitelisted IP addresses_
 - The Jumpbox (10.0.0.4) is the only machine that can be connected to from the internet through http.
 
 Machines within the network can only be accessed by SSH.
@@ -61,13 +60,9 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _ What is the main advantage of automating configuration with Ansible?_
 - The main advantage of using Ansible is to automate the deployment of each of the DVWA-VMs into one command. 
 
-The playbook implements the following tasks:
-- _ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -96,5 +91,4 @@ SSH into the control node and follow the steps below:
 - Update the ansible.cfg file to change the remote_user value to the username for playbooks.
 - Run the playbook, and navigate to ELK Server to check that the installation worked as expected.
 - To ensure the ELK Server is running, navigate to the URL that is the public IP Address of the ELK Server
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 
